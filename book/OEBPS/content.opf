@@ -18,7 +18,7 @@
 
          See: MARC Code List for Relators: http://www.loc.gov/marc/relators/relaterm.html
 
-         Examples: 
+         Examples:
 
          * Editor [edt]
            Use for a person or organization who prepares for publication a work not primarily his/her own,
@@ -27,11 +27,11 @@
 
          * Cover designer [cov]
            Use for a person or organization responsible for the graphic design of a book cover,
-           album cover, slipcase, box, container, etc. For a person or organization responsible 
+           album cover, slipcase, box, container, etc. For a person or organization responsible
            for the graphic design of an entire book, use Book designer; for book jackets, use Bookjacket designer.
 
          * Translator [trl]
-           Use for a person or organization who renders a text from one language into another, or from an older 
+           Use for a person or organization who renders a text from one language into another, or from an older
            form of a language into the modern form.
 
          -->
@@ -56,7 +56,7 @@
        List of all the resources of the book (XHTML, CSS, images,…).
        The order of item elements in the manifest is NOT significant.
 
-       http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.3 
+       http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.3
   -->
 
   <manifest>
@@ -64,23 +64,17 @@
     <item href="Text/cover.xhtml" id="cover" media-type="application/xhtml+xml" />
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
     <item href="Styles/style.css" id="css" media-type="text/css" />
-    <item href="Text/frontmatter.xhtml" id="frontmatter" media-type="application/xhtml+xml" />
-    <item href="Text/dedication.xhtml" id="dedication" media-type="application/xhtml+xml" />
     <item href="Text/toc.xhtml" id="toc" media-type="application/xhtml+xml" />
-    <item href="Text/foreword.xhtml" id="foreword" media-type="application/xhtml+xml" />
-    <item href="Text/introduction.xhtml" id="introduction" media-type="application/xhtml+xml" />
     <item href="Text/chapter01.xhtml" id="chapter-1" media-type="application/xhtml+xml" />
     <item href="Text/chapter02.xhtml" id="chapter-2" media-type="application/xhtml+xml" />
     <item href="Text/chapter03.xhtml" id="chapter-3" media-type="application/xhtml+xml" />
-    <item href="Text/endnotes.xhtml" id="endnotes" media-type="application/xhtml+xml" />
-    <item href="Text/acknowledgements.xhtml" id="acknowledgements" media-type="application/xhtml+xml" />
     <item href="Images/image-01.jpg" id="image-01" media-type="image/jpeg" />
     <item href="Images/image-02.png" id="image-02" media-type="image/png" />
   </manifest>
 
   <!-- SPINE (mandatory)
 
-       The spine element defines the default reading order of the content. It doesn't list every file in the manifest, 
+       The spine element defines the default reading order of the content. It doesn't list every file in the manifest,
        just the reading order.
 
        The value of the idref tag in the spine has to match the ID tag for that entry in the manifest.
@@ -98,16 +92,10 @@
        -->
   <spine toc="ncx">
     <itemref idref="cover" />
-    <itemref idref="frontmatter" />
     <itemref idref="toc" />
-    <itemref idref="foreword" />
-    <itemref idref="dedication" />
-    <itemref idref="introduction" />
     <itemref idref="chapter-1" />
     <itemref idref="chapter-2" />
     <itemref idref="chapter-3" />
-    <itemref idref="endnotes" />
-    <itemref idref="acknowledgements" />
   </spine>
 
   <!-- GUIDE (optional, recommended by Apple)
@@ -124,15 +112,9 @@
   <guide>
     <reference href="Text/cover.xhtml" title="Cover" type="cover" />
     <reference href="Text/toc.xhtml" title="Table of Contents" type="toc" />
-    <reference href="Text/frontmatter.xhtml" type="copyright-page" />
-    <reference href="Text/foreword.xhtml" type="foreword" />
-    <reference href="Text/dedication.xhtml" type="dedication" />
-    <reference href="Text/introduction.xhtml" type="text" />
     <reference href="Text/chapter01.xhtml" type="text" />
     <reference href="Text/chapter02.xhtml" type="text" />
     <reference href="Text/chapter03.xhtml" type="text" />
-    <reference href="Text/endnotes.xhtml" type="notes" />
-    <reference href="Text/acknowledgements.xhtml" type="acknowledgements" />
   </guide>
 
 </package>
