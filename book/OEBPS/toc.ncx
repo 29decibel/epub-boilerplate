@@ -13,25 +13,19 @@
     <text>[BOOK'S TITLE]</text>
   </docTitle>
   <navMap>
-    <navPoint id="navpoint1" playOrder="1">
-      <navLabel>
-        <text>Cover</text>
-      </navLabel>
-      <content src="Text/cover.xhtml"/>
-    </navPoint>
-    <navPoint id="navpoint6" playOrder="2">
+    <navPoint id="navpoint6" playOrder="1">
       <navLabel>
         <text>Chapter 1</text>
       </navLabel>
       <content src="Text/chapter01.xhtml"/>
     </navPoint>
-    <navPoint id="navpoint7" playOrder="3">
+    <navPoint id="navpoint7" playOrder="2">
       <navLabel>
         <text>Chapter 2</text>
       </navLabel>
       <content src="Text/chapter02.xhtml"/>
     </navPoint>
-    <navPoint id="navpoint8" playOrder="4">
+    <navPoint id="navpoint8" playOrder="3">
       <navLabel>
         <text>Chapter 3</text>
       </navLabel>

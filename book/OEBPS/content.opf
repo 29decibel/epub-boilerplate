@@ -61,7 +61,6 @@
 
   <manifest>
     <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg" />
-    <item href="Text/cover.xhtml" id="cover" media-type="application/xhtml+xml" />
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
     <item href="Styles/style.css" id="css" media-type="text/css" />
     <item href="Text/toc.xhtml" id="toc" media-type="application/xhtml+xml" />
@@ -91,7 +90,6 @@
 
        -->
   <spine toc="ncx">
-    <itemref idref="cover" />
     <itemref idref="toc" />
     <itemref idref="chapter-1" />
     <itemref idref="chapter-2" />
@@ -110,7 +108,6 @@
 
        -->
   <guide>
-    <reference href="Text/cover.xhtml" title="Cover" type="cover" />
     <reference href="Text/toc.xhtml" title="Table of Contents" type="toc" />
     <reference href="Text/chapter01.xhtml" type="text" />
     <reference href="Text/chapter02.xhtml" type="text" />
