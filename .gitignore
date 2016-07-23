@@ -2,3 +2,4 @@
 bin/kindlegen
 *.epub
 .zip
+*.mobi
